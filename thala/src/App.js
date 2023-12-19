@@ -55,7 +55,7 @@ const Meme = () => {
         </p>
         <video
   src={`https://thalaforareason-tau.vercel.app/static/media/thala.f6b8a66dba4ecf16cb6d.mp4`}
-  
+  controls
   loop
   className="w-64"
   style={{ display: "block" }}
