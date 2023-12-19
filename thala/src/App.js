@@ -8,9 +8,9 @@ import moyemoyeaudio from './vedio/moye-moye.mp3'
 const CopyButton = ({ text }) => {
   const [isCopied, setIsCopied] = useState(false);
 
-
   const handleCopy = () => {
-    navigator.clipboard.writeText(text);
+    const textWithoutSpaces = text.replace(/\s/g, ""); // Remove spaces
+    navigator.clipboard.writeText(textWithoutSpaces);
     setIsCopied(true);
     setTimeout(() => {
       setIsCopied(false);
@@ -29,6 +29,7 @@ const CopyButton = ({ text }) => {
     </div>
   );
 };
+
 
 const Meme = () => {
   const { input, result } = useParams();
@@ -155,7 +156,8 @@ const Home = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-green-500">
       <div className="bg-white p-8 rounded shadow-md">
-        <h1 className="text-3xl font-bold mb-4 text-blue-500">👋Hey!!</h1>
+        <h1 className="text-3xl font-bold mb-4 text-blue-500">👋Hey!! </h1>
+        <h1 className="text-3xl font-bold mb-4 text-blue-500">Thala for a reason </h1>
         <input
           type="text"
           className="w-full p-2 border rounded mb-4"
