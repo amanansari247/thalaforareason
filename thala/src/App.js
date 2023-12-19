@@ -158,7 +158,7 @@ const Home = () => {
           Check
         </button>
         {showConfetti && (
-          <CopyButton text={`http://localhost:3000/meme/${encodeURIComponent(input)}/${result}`} />
+          <CopyButton text={`https://thalaforareason-tau.vercel.app/${encodeURIComponent(input)}/${result}`} />
         )}
         {showConfetti && (
           <div className="mt-4 flex flex-col items-center">
