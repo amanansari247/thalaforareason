@@ -54,12 +54,12 @@ const Meme = () => {
           {formatInput(input)} Thala for a reason
         </p>
         <video
-          src={vediothala}
-          autoPlay
-          loop
-          className="w-64"
-          style={{ display: "block" }}
-        />
+  src={`https://thalaforareason-tau.vercel.app/${vediothala}`}
+  autoPlay
+  loop
+  className="w-64"
+  style={{ display: "block" }}
+/>
       </div>
     </div>
   );
