@@ -54,7 +54,7 @@ const Meme = () => {
           {formatInput(input)} Thala for a reason
         </p>
         <video
-  src={`https://thalaforareason-tau.vercel.app/${vediothala}`}
+  src={`https://thalaforareason-tau.vercel.app/static/media/thala.f6b8a66dba4ecf16cb6d.mp4`}
   autoPlay
   loop
   className="w-64"
