@@ -136,7 +136,7 @@ const Home = () => {
   };
 
   const handleShare = () => {
-    const uniqueUrl = `http://localhost:3000/meme/${input}/${result}`;
+    const uniqueUrl = `https://thalaforareason-tau.vercel.app/${input}/${result}`;
     console.log("Share this URL:", uniqueUrl);
   };
 
