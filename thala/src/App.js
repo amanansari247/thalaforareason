@@ -4,6 +4,8 @@ import vediothala from './vedio/thala.mp4';
 import { FiCopy } from 'react-icons/fi'; // Import the copy icon
 import moyemoye from './vedio/download.jpg'
 import moyemoyeaudio from './vedio/moye-moye.mp3'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const CopyButton = ({ text }) => {
   const [isCopied, setIsCopied] = useState(false);
@@ -15,6 +17,7 @@ const CopyButton = ({ text }) => {
     setTimeout(() => {
       setIsCopied(false);
     }, 2000);
+    toast("Share With Your Friends!!🎉");
   };
 
   return (
@@ -71,6 +74,7 @@ const Meme = () => {
           </button>
         </div>
       </div>
+     
     </div>
   );
 };
@@ -106,6 +110,7 @@ const Home = () => {
 
   const handleCheckSum = (input, result) => {
     let sum;
+    
 
     if (typeof input === "number" || typeof input === "string") {
       const digitSum = input
@@ -216,6 +221,7 @@ const Home = () => {
             /></>
         )}
       </div>
+      <ToastContainer />
     </div>
   );
 };
