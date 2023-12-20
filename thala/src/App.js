@@ -81,7 +81,7 @@ const Meme = () => {
 const Footer = () => {
   return(
     <div className="text-3xl font-bold text-center bg-gradient-to-r from-blue-500 to-green-500 text-white ">
-      Made With 💓 by Aman Husssain
+      Made With 💓 by Aman Hussain
     </div>
   )
 
