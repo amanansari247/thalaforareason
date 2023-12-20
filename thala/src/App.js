@@ -74,7 +74,15 @@ const Meme = () => {
     </div>
   );
 };
+const Footer = () => {
+  return(
+    <div className="text-3xl font-bold text-center bg-gradient-to-r from-blue-500 to-green-500 text-white ">
+      Made With 💓 by Aman Husssain
+    </div>
+  )
 
+
+}
 const Home = () => {
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
@@ -219,6 +227,7 @@ const App = () => {
         <Route path="/meme/:input/:result" element={<Meme />} />
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
