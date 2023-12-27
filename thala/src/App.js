@@ -110,9 +110,12 @@ const Home = () => {
 
   const handleCheckSum = (input, result) => {
     let sum;
-    
+    if(input === 'thala' || input==='Thala' ||  input==='THALA' ){
+         sum = 7;
+      }
 
-    if (typeof input === "number" || typeof input === "string") {
+    else if (typeof input === "number" || typeof input === "string") {
+      
       const digitSum = input
         .toString()
         .split("")
